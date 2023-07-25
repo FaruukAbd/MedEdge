@@ -106,7 +106,7 @@ function Doctorprofile() {
           src={selectedImage || profile?.profilephoto}
           alt="Picture of the author"
           width={200}
-          height={200}
+          height={200} 
         />
         <input type="file" accept="image/*" onChange={handleImageChange} /> */}
       <div className="mx-auto w-64 pt-3 text-center">
