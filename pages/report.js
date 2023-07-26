@@ -60,6 +60,7 @@ export default function report() {
       },
       body: JSON.stringify(patientData),
     });
+    
     let datat = await saveResponse.json();
     if (datat.message) {
       setMessage(datat.message);

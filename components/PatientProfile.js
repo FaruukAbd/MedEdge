@@ -213,7 +213,7 @@ function PatientProfile() {
           </div>
         </div>
         
-        <div class="fixed z-50 w-36 mt-10 mr-3  h-60 right-4 bottom-1/2 transform translate-y-1/2 bg-white border border-gray-200  dark:bg-gray-700 dark:border-gray-600 hover:opacity-70">
+        <div class="absolute z-50 w-36 mt-10 mr-3  h-60 right-4 bottom-1/2 transform translate-y-1/2 bg-white border border-gray-200  dark:bg-gray-700 dark:border-gray-600 hover:opacity-70">
           <div class="grid h-full grid-rows-2 mx-auto">
             <button data-tooltip-target="tooltip-home" class="inline-flex   flex-col items-center justify-center px-2  hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-blue-600 group"
               type="submit"
@@ -258,11 +258,11 @@ function PatientProfile() {
               <p className="font-mono font-semibold">
                 <span className="font-bold text-indigo-900">Lab:</span>
               </p>
-              <p className="font-mono font-semibold">{report.labName}</p>
-              <p className="font-mono font-semibold">{report.labAddress}</p>
+              <p className="font-mono font-semibold  text-indigo-900 "  >{report.labName}</p>
+              <p className="font-mono font-semibold  text-indigo-900 ">{report.labAddress}</p>
 
               <Image
-                className="ml-10 mt-3"
+                className="ml-10 mt-3  text-indigo-900 cursor-pointer"
                 src={report.imageUrl}
                 alt="Picture of the author"
                 width={200}
